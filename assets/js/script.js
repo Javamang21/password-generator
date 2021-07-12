@@ -25,25 +25,21 @@ var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
             var specialCharacterPrompt = window.confirm ("Would you like special characters in your password ?");
                 if (specialCharacterPrompt === true) {
                     selectedCharacters = selectedCharacters.concat(specialCharacters);
-                    console.log(selectedCharacters);
                 }
 // Confirm prompt for numbers
                 var numbersPrompt = window.confirm ("Would you like numbers in your password ?");
                 if (numbersPrompt === true) {
                     selectedCharacters = selectedCharacters.concat(numbers);
-                    console.log(selectedCharacters);
                 }
 // Confirm prompt for lower case 
                 var lowerCasePrompt = window.confirm ("Would you like lower-case letters in your password ?");
                 if (lowerCasePrompt === true) {
                     selectedCharacters = selectedCharacters.concat(lowerCase);
-                    console.log(selectedCharacters);
                 }
 // Confirm Prompt for upper case
                 var upperCasePrompt = window.confirm ("Would you like upper-case letters in your password ?");
                 if (upperCasePrompt === true) {
                     selectedCharacters = selectedCharacters.concat(upperCase);
-                    console.log(selectedCharacters);
                 }
 
 // Final check to make sure they didn't say no for each password prompt selection
