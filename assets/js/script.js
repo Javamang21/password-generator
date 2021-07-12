@@ -1,17 +1,3 @@
-// Write password to the #password input
-function writePassword() {
-    var password = passwordGenerator();
-    var passwordText = document.querySelector("#password");
-    
-    passwordText.value = password;
-    
-  }
-
-  var generateBtn = document.querySelector("#generate");
-  
-  // Add event listener to generate button
-  generateBtn.addEventListener("click", writePassword);
-
 // Function that iterates and prints the results
 
 function passwordGenerator() {
@@ -75,7 +61,16 @@ var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
     
         }
 
-
+// Write password to the #password input
+function writePassword() {
+    var password = passwordGenerator();
+    var passwordText = document.querySelector("#password");
     
+    passwordText.value = password;
+    
+  }
 
-
+  var generateBtn = document.querySelector("#generate");
+  
+  // Add event listener to generate button
+  generateBtn.addEventListener("click", writePassword);
